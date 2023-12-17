@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import sqlite3
 
-app = Flask(__name__, template_folder='.')
+app = Flask(__name__, template_folder='docs')
 
 def query_database(search_term):
     conn = sqlite3.connect('transcripts.db')
